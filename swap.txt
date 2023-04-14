@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+
+int main(void){
+	int x = 70;
+	int *y = &x;
+	printf("y=%d,*Y=%d\n",y,*y);
+
+}

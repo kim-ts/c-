@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main(void)
+{
+	int x = -50, y = 30;
+	int absoluteX = (x>0) ? x : -x; // : 기준으로 왼쪽은 참값 오른쪽은 거짓 즉 앞()안의 내용이 참인지 거짓인지에따라 결과출력
+	//즉 위 식은 x가 0보다 크다면  그대로 출력 x가 0보다 작다면 -를 붙여서 출력 이란뜻 
+	printf("%d\n",absoluteX);
+	int max = (x > y) ? x: y;
+	printf("%d\n",max); 
+	//x가 y 보다 크다면 x출력 y가 더크면 y출력 즉, 두 xy중 max값 출력하란뜻
+	int min = (x<y) ? x : y;
+	printf("%d\n",min);
+	//x가 y 보다 작다면 x출력 y가 더작으면 y출력 즉, 두 xy중 min값 출력
+	
+	return 0 ; 
+}

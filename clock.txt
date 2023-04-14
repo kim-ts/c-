@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+//전역 변수
+int hour;
+int minute;
+int minuteAdd;
+/*
+int counter() //함수가 종료될때 int형태의 값을 반환하는 함수 
+{
+	minute += minuteAdd;
+	hour += minute / 60;
+	minute %= 60;
+	hour %= 24;
+	return minute;  //사용할떄 이 counter 함수를 실행하고 난후 return값을 변수에 저 장	 
+} */
+
+void counter()// 반환값을 안쓸때 void 사용  
+{
+	minute += minuteAdd;
+	hour += minute / 60;
+	minute %= 60;
+	hour %= 24;
+}
+
+int main(void)
+{
+	printf("시:");
+	scanf("%d",&hour);
+	printf("분:");
+	scanf("%d", &minute);
+	printf("더할 분:") ;
+	scanf("%d",&minuteAdd);
+	counter();
+	printf("%d 시 %d 분 .\n",hour,minute);
+	return 0;
+}
